@@ -1,9 +1,12 @@
 pub mod day1;
 pub mod day2;
+pub mod day3;
 
 #[macro_export]
 macro_rules! day_file {
-    () => { day_file!("input.txt") };
+    () => {
+        day_file!("input.txt")
+    };
     ($name:expr) => {{
         use std::fs::read_to_string;
         use std::path::Path;
